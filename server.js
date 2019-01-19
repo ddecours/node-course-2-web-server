@@ -54,6 +54,12 @@ app.get('/about', (request, response) => {
     });
 });
 
+app.get('/projects', (request, response) => {
+    response.render('projects.hbs', {
+        pageTitle: 'Project Portolio page'
+    });
+});
+
 app.get('/bad', (request, response) => {
     response.send({
         errorMessage: 'You stink!'
